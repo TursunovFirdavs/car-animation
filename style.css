@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(246, 246, 246, 0.888);
+}
+
+.way > img {
+    width: 100vw;
+    height: 50vh;
+}
+
+.car {
+    position: relative;
+    margin-left: 20px;
+}
+.car__wheel {
+    margin-top: -50px;
+    position: absolute;
+    bottom: 17px;
+    left: 120px;
+    display: flex;
+    gap: 370px;
+}
+
+.car__wheel > img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    100%{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin {
+    100%{-webkit-transform: rotate(360deg);}
+}
+@keyframes spin {
+    100%{-webkit-transform: rotate(360deg);}
+}
